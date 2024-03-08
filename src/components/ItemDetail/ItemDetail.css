@@ -1,0 +1,15 @@
+.Productos {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: block;
+    width: auto;
+    float: left;
+    border-width: 5px;
+}
+
+.CetrarImagen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -1,0 +1,8 @@
+.Productos {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: block;
+    width: auto;
+    float: left;
+    border-width: 5px;
+}
