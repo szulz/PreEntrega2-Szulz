@@ -12,7 +12,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 33,
         description: 'Este es el producto numero 1',
-        categoryId: 1,
+        categoryId: 'sports',
         id: 1,
         stock: 20
     },
@@ -21,7 +21,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 155,
         description: 'Este es el producto numero 2',
-        categoryId: 3,
+        categoryId: 'health',
         id: 2,
         stock: 41
     },
@@ -30,7 +30,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 99,
         description: 'Este es el producto numero 3',
-        categoryId: 4,
+        categoryId: 'health',
         id: 3,
         stock: 1
     },
@@ -39,7 +39,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 748,
         description: 'Este es el producto numero 4',
-        categoryId: 2,
+        categoryId: 'technology',
         id: 4,
         stock: 8
     },
@@ -48,7 +48,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 45,
         description: 'Este es el producto numero 5',
-        categoryId: 1,
+        categoryId: 'sports',
         id: 5,
         stock: 7
     },
@@ -57,7 +57,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 101,
         description: 'Este es el producto numero 6',
-        categoryId: 4,
+        categoryId: 'technology',
         id: 6,
         stock: 3
     },
@@ -66,7 +66,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 456,
         description: 'Este es el producto numero 7',
-        categoryId: 2,
+        categoryId: 'food',
         id: 7,
         stock: 15
     },
@@ -75,7 +75,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: 500,
         description: 'Este es el producto numero 8',
-        categoryId: 3,
+        categoryId: 'technology',
         id: 8,
         stock: 5
     },
@@ -84,7 +84,7 @@ const products = [
         image: 'https://placehold.co/200x200/png',
         price: '1000',
         description: 'Este es el producto numero 9',
-        categoryId: 1,
+        categoryId: 'sports',
         id: 9,
         stock: 10
     }
@@ -100,6 +100,6 @@ export async function getProductById(id) {
 }
 
 export async function getProductByCategory(id) {
-    const productsCategory =  products.find(prod => prod.categoryId === id)
+    const productsCategory =  products.find(prod => prod.categoryId == id)
     return productsCategory
 }

@@ -1,4 +1,5 @@
 import NavBarTop from "./NavBarTop/NavBarTop"
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (

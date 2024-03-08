@@ -27,11 +27,15 @@ const ItemDetail = ({ title, image, price, description, stock, categoryId, id })
 
     return (
         <>
-            <div className="Productos" >
-                <img src={image} alt={title} className='CetrarImagen'/>
-                <h3 style={{ textAlign: 'center' }}> {title}</h3>
+            <div className='center'>
+                <div style={{ textAlign: 'center', border: " 3px solid rgb(0, 0, 0)" , padding:'10px'}}>
+                    <h3> {title}</h3>
+                    <img src={image} alt={title} />
+                </div>
+
+
                 <p >{price}$</p>
-                <div>
+                <div >
                     <button type="button" className="btn btn-outline-primary" onClick={() => add()}>+</button>
                     <button type="button" className="btn btn-outline-success" onClick={() => addToCart()}>Add to cart: {quantity}</button>
                     <button type="button" className="btn btn-outline-danger" onClick={() => subtract()}>-</button>
@@ -39,6 +43,7 @@ const ItemDetail = ({ title, image, price, description, stock, categoryId, id })
                 <p style={{ marginBottom: '0px' }}>Stock: {stockquantity}</p>
                 <p>Description: {description}</p>
                 <p>Category: {categoryId}</p>
+
             </div >
         </>
     )

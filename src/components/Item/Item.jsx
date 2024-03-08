@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Item.css"
+import { Link } from "react-router-dom"
 
 const Item = ({ title, image, price, description, stock, categoryId, id }) => {
     const [quantity, setQuantity] = useState(0)
@@ -38,6 +39,7 @@ const Item = ({ title, image, price, description, stock, categoryId, id }) => {
                 </div>
                 <p style={{ marginBottom: '0px' }}>Stock: {stockquantity}</p>
                 <button type="button" className="btn btn-secondary btn-sm" >See details</button>
+                <Link to={`/detail/${id}`}>Detail</Link>
 
             </div >
         </>
