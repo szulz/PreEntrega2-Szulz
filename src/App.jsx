@@ -10,6 +10,7 @@ function App() {
       <NavBar />
       <ItemListContainer />
       <ItemDetailContainer id={8}/>
+      
     </>
   )
 }
