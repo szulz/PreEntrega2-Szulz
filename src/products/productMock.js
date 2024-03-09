@@ -95,11 +95,11 @@ export async function getProducts() {
 }
 
 export async function getProductById(id) {
-    const productsId =  products.find(prod => prod.id === id)
+    const productsId = products.find(prod => prod.id === id)
     return productsId
 }
 
 export async function getProductByCategory(id) {
-    const productsCategory =  products.find(prod => prod.categoryId == id)
+    const productsCategory = products.filter(prod => prod.categoryId == id)
     return productsCategory
 }

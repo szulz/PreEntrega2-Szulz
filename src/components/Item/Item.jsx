@@ -38,8 +38,7 @@ const Item = ({ title, image, price, description, stock, categoryId, id }) => {
                     <button type="button" className="btn btn-outline-danger" onClick={() => subtract()}>-</button>
                 </div>
                 <p style={{ marginBottom: '0px' }}>Stock: {stockquantity}</p>
-                <button type="button" className="btn btn-secondary btn-sm" >See details</button>
-                <Link to={`/detail/${id}`}>Detail</Link>
+                <Link to={`/detail/${id}`} className="btn btn-secondary btn-sm">See details</Link>
 
             </div >
         </>

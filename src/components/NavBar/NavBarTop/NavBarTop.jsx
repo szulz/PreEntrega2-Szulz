@@ -5,7 +5,7 @@ import CartWidget from '../../CartWidget/CartWidget'
 const NavBarTop = () => {
     return (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <h1 style={{ margin: "0px" }}>Koren Store</h1>
+            <a href="/" style={{ margin: "0px", color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}><h1 >Koren Store</h1></a>
             <div>
                 <input type="text" placeholder="Search.."></input>
                 <button>Search</button>
@@ -19,5 +19,6 @@ const NavBarTop = () => {
         </div >
     )
 }
+
 
 export default NavBarTop
