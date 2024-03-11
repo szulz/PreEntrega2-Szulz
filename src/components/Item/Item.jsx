@@ -23,7 +23,7 @@ const Item = ({ title, image, price, description, stock, categoryId, id }) => {
         if (quantity === 0) {
             return alert('you have not added any product')
         }
-        addItem({ product: { title, image, price, description, stock, categoryId, id } }, quantity)
+        addItem({ product: { title, image, price, description, stock, categoryId, id, quantity } })
         setStockquantity(stockquantity => stockquantity - quantity)
         setQuantity(quantity => quantity = 0)
         return
