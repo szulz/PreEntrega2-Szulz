@@ -1,11 +1,15 @@
-import cart from "./cart.svg"
+import { useContext } from "react"
+import cartImg from "./cart.svg"
+import { CartContext } from "../../App"
+
 
 const CartWidget = () => {
-    return (
+    const { cart } = useContext(CartContext)
+    return (    
         <>
             <div>
-                {0}
-                <img src={cart} alt="cart" style={{ height: "25px" }} />
+                {cart.length}
+                <img src={cartImg} alt="cart" style={{ height: "25px" }} />
 
             </div>
         </>
