@@ -15,6 +15,7 @@ const CartContainer = () => {
                     {cart.map(cart =>
                         <CartList key={cart.id} {...cart}></CartList>
                     )}
+                    <button type="button" className="btn btn-outline-success" style={{}} >Buy</button>
                 </>
             }
         </>
